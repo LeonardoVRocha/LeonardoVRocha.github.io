@@ -3,10 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Portifólio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Portfólio</title>
 </head>
 <body>
     
+    <div class="container" id="home">
+
+        <div class="hamburguer">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <span>Fechar</span>
+        </div>
+
+        <header>
+            <div class="img-wrapper">
+                <img src="imagens/imagem--principal.jpg" alt="">
+            </div>
+            <div class="banner">
+                <h1>Web Developer & Front End Designer</h1>
+                <p>Leonardo V Rocha</p>
+                <button>Saiba mais</button>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#conhecimento" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#projeto" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contatos</a></li>
+                    <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/leonardo-vitor-5077a3232"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/LeonardoVRocha"><i class="fab fa-github-alt"></i></a>
+                <a href="https://www.instagram.com/vrocha.leo/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </aside>
+
+        <section id="conhecimento" class="sessao-conhecimentos">
+            <div class="sessao-header">
+                <h1>Conhecimentos</h1>
+            </div>
+            <div class="conhecimentos">
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Trata-se de uma linguagem de marcação 
+                            para desenvolver páginas e documentos eletrônicos 
+                            para a internet, fornecendo informações para usuários,
+                             navegadores e mecanismos de busca.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por “camadas” 
+                            e utilizada para definir a apresentação 
+                            (aparência) em páginas da internet que adotam para o seu desenvolvimento linguagens
+                             de marcação (como XML, HTML e XHTML).</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-react"></i>
+                        <h3>React</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>O React é uma biblioteca criada para construir telas de forma declarativa. Ou seja:
+                             o React cria aplicações web para serem executadas
+                             em navegadores, sejam eles para desktop, mobile ou qualquer outro dispositivo</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-js"></i>
+                        <h3>Javascript</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>JavaScript é uma linguagem de programação que permite a você implementar itens complexos 
+                            em páginas web — toda vez que uma página da web faz mais do que simplesmente mostrar a 
+                            você informação estática.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-bootstrap"></i>
+                        <h3>Bootstrap</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>O Bootstrap é o framework mais utilizado para criar layouts e telas de sistemas web,
+                             dashboards, sites responsivos e sites comuns, também. Ele facilita muito o trabalho
+                              de front-end.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-github"></i>
+                        <h3>Git e Github</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>GitHub é uma plataforma para gerenciar seu código e criar um ambiente de
+                             colaboração entre devs, utilizando o Git como sistema de controle.</p>
+                    </div>
+                </div>
+                <div class="conhecimentos-img-wrapper">
+                    <img src="imagens/conhecimentos.png" alt="conhecimento">
+                </div>
+            </div>
+        </section>
+
+        <section class="sessao-projeto" id="projeto">
+            <div class="sessao-header">
+                <h1>Projetos</h1>
+            </div>
+            <div class="projeto">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="imagens/netflix.webp" alt="imagem do projeto">
+                    </div>
+                    <div class="card-info">
+                        <h2>Netflix</h2>
+                        <h3>HTML E CSS</h3>
+                        <p>Netflix, busquei por aprender como são usadas as tecnologias de desenvolvimento para as demais aplicações,
+                        o resultado foi maravilhoso, as implementações de design e a facilidade do usuário em encontrar o quê deseja foram ótimas!.</p>
+                        <button><a class="link-card" href="https://github.com/LeonardoVRocha/Netflix.html">Saiba mais</a></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="imagens/petshop.jpg" alt="imagem do projeto">
+                    </div>
+                    <div class="card-info">
+                        <h2>Pet Shop</h2>
+                        <h3>HTML E CSS</h3>
+                        <p>Petshop, realizei esse projeto com a principal função de criação de um comércio novo, algo que facilita o encontro do
+                        vendedor com o cliente, o site conta com o sistema de contato, apresentação, venda dos produtos e com o sistema de cadastro de animais.</p>
+                        <button><a class="link-card" href="https://github.com/LeonardoVRocha/PET-SHOP">Saiba mais</a></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="imagens/pokmon.jpg" alt="imagem do projeto">
+                    </div>
+                    <div class="card-info">
+                        <h2>Pokemon</h2>
+                        <h3>JS, HTML E CSS</h3>
+                        <p>Bom, projeto pokemon, realizei algumas funções que realizam a busca dentro do site original do pokemon e ele busca as informações do pokemon
+                        e apresentam em uma imagem, criei esse projeto na função de facilitar busca por diversos sites "aleatórios".</p>
+                        <button><a class="link-card" href="https://github.com/LeonardoVRocha/pokemon-JS-HTML-E-CSS">Saiba mais</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sessao-contato" id="contato">
+            <div class="contato-wrapper">
+                <div class="contato-left"></div>
+                <div class="contato-right">
+                    <h1>contato</h1>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="field" id="nome">
+                            <label for="nome" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="field" id="email">
+                            <label for="email" class="field-label">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field" id="mensagem"></textarea>
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                        </div>
+                        <button class="btn-submit" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="sessao-orcamento" id="orcamento">
+            <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form>
+                    <label for="quantidade">Qntd de Páginas</label>
+                    <input type="number" min="1" name="quantidade" id="quantidade">
+                    <label for="js">Preciso de um script JS</label>
+                    <input class="form-js" type="checkbox" name="js" id="js">
+                    <label>Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-sim">
+                            <label for="layout-sim">Preciso de um layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-nao">
+                            <label for="layout-nao">Já tenho um layout</label>
+                        </div>
+                    </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo" min="1" max="10">
+                    <label id="preco">R$ 0,00 </label>
+                    <button class="btn btn-orcamento" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>Copyright &copy; 2022</p>
+                <div class="social-list">
+                    <ul>
+                    <li><a href="https://www.linkedin.com/public-profile/settings"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/LeonardoVRocha"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <a href="" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <script src="javascript.js"></script>
+
 </body>
 </html>
